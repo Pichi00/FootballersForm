@@ -8,11 +8,14 @@
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
         <Style TargetType="TextBlock">
-            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontSize" Value="14"/>
             <Setter Property="Margin" Value="5,5,5,0"/>
         </Style>
         <Style TargetType="TextBox">
-            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+        <Style TargetType="Border">
+            <Setter Property="Margin" Value="5"/>
         </Style>
     </Window.Resources>
     <Grid>
@@ -36,13 +39,13 @@
                 />
 
             <!--Height[cm]-->
-            <TextBlock x:Name="textBlockHeight" Text="Height"/>
+            <TextBlock x:Name="textBlockHeight" Text="Height [cm]"/>
             <local:TextBoxWithErrorProvider
                 x:Name="textBoxHeight"
                 />
 
             <!--Weight[kg]-->
-            <TextBlock x:Name="textBlockWeight" Text="Weight"/>
+            <TextBlock x:Name="textBlockWeight" Text="Weight [kg]"/>
             <local:TextBoxWithErrorProvider
                 x:Name="textBoxWeight"
                 />
@@ -65,18 +68,23 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Button Name="buttonAdd"
-                        Content="Add"/>
-                
+                        Content="Add"
+                        Click="buttonAdd_Click"/>
+
                 <Button Name="buttonEdit"
                         Content="Edit"
-                        Grid.Column="1"/>
-                
+                        Grid.Column="1"
+                        Click="buttonEdit_Click"/>
+
                 <Button Name="buttonDelete"
                         Content="Delete"
-                        Grid.Column="2"/>
+                        Grid.Column="2"
+                        Click="buttonDelete_Click"/>
             </Grid>
-
-
         </StackPanel>
+
+        <ListBox x:Name="listBoxFootballers"
+                 Grid.Column="1"
+                 SelectionChanged="listBoxFootballers_SelectionChanged"/>
     </Grid>
 </Window>

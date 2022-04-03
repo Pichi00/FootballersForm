@@ -20,9 +20,52 @@ namespace Footballers
     /// </summary>
     public partial class TextBoxWithErrorProvider : UserControl
     {
+        #region Properites
+        public static Brush BrushForAll { get; set; } = Brushes.Brown;
+
+        public Brush TextBoxBorderBrush
+        {
+            get
+            {
+                return border.BorderBrush;
+            }
+            set
+            {
+                border.BorderBrush = value;
+            }
+        }
+
+        public string Text
+        {
+            get
+            {
+                return textBox.Text;
+            }
+            set
+            {
+                textBox.Text = value;
+            }
+        }
+
+        #endregion
         public TextBoxWithErrorProvider()
         {
             InitializeComponent();
+            border.BorderBrush = BrushForAll;
+        }
+        public void SetError(string errorText)
+        {
+            textBlockToolTip.Text = errorText;
+            if (errorText != "")
+            {
+                border.BorderThickness = new Thickness(2);
+                tooltip.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                border.BorderThickness = new Thickness(0);
+                tooltip.Visibility = Visibility.Hidden;
+            }
         }
     }
 }
