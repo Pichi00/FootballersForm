@@ -14,3 +14,6 @@ E:\Studia\StudiaSemIV\ProgramowanieObiektowe\Footballers\Footballers\obj\Debug\F
 E:\Studia\StudiaSemIV\ProgramowanieObiektowe\Footballers\Footballers\obj\Debug\Footballers.csproj.CoreCompileInputs.cache
 E:\Studia\StudiaSemIV\ProgramowanieObiektowe\Footballers\Footballers\obj\Debug\Footballers.exe
 E:\Studia\StudiaSemIV\ProgramowanieObiektowe\Footballers\Footballers\obj\Debug\Footballers.pdb
+E:\Studia\StudiaSemIV\ProgramowanieObiektowe\Footballers\Footballers\obj\Debug\TextBoxWithErrorProvider.g.cs
+E:\Studia\StudiaSemIV\ProgramowanieObiektowe\Footballers\Footballers\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Studia\StudiaSemIV\ProgramowanieObiektowe\Footballers\Footballers\obj\Debug\TextBoxWithErrorProvider.baml

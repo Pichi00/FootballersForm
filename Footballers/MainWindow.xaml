@@ -25,16 +25,27 @@
                    Background="Azure" >
             <!--Name-->
             <TextBlock x:Name="textBlockName" Text="Name"/>
-            
-            
+            <local:TextBoxWithErrorProvider
+                x:Name="textBoxName"
+                />
+
             <!--Surname-->
             <TextBlock x:Name="textBlockSurname" Text="Surname"/>
+            <local:TextBoxWithErrorProvider
+                x:Name="textBoxSurname"
+                />
 
             <!--Height[cm]-->
             <TextBlock x:Name="textBlockHeight" Text="Height"/>
+            <local:TextBoxWithErrorProvider
+                x:Name="textBoxHeight"
+                />
 
             <!--Weight[kg]-->
             <TextBlock x:Name="textBlockWeight" Text="Weight"/>
+            <local:TextBoxWithErrorProvider
+                x:Name="textBoxWeight"
+                />
 
 
             <ComboBox Name="comboBoxPosition" 
